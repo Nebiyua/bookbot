@@ -10,7 +10,7 @@ def main():
         #Sort the list of dictionaries in descending order based on character count
         char_list.sort(reverse=True, key=sort_by_count)
         
-        display(num_words, char_list)
+        display_report(num_words, char_list)
         
         return text
 
@@ -43,7 +43,7 @@ def sort_by_count(item):
     #Return the count value for sorting
     return item["count"]
 
-def display(num_words,char_list):
+def display_report(num_words,char_list):
     print("--- Begin report of books/frankenstein.txt ---")
     print(f"{num_words} words found in the document\n\n")
     
